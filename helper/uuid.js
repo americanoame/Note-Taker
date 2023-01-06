@@ -1,11 +1,12 @@
 // uuid generate radom string()  
 
-module.export = () => {
+function uuid() {
     return Math.floor((1 + Math.random()) * 0x10000)
     .toString(16)
     .substring();
-    
-    };
+};
+
+module.exports = uuid;
     
     // we have a radom number whatever we raun that the  number will
      // 0 - 0.9999999999 but never will be one
