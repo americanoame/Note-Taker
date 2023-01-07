@@ -59,9 +59,9 @@ app.post('/notes', (req, res) => {
         };
 
         readAndAppend(note, './db/db.json');
-        res.json(`Tip added successfully 🚀`);
+        res.status(200).json(`Tip added successfully 🚀`);
     } else {
-        res.error('Error in adding tip');
+        res.json('Error in adding tip');
     }
 });
 //locahost:3001/api/notes, POST method
