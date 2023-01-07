@@ -29,7 +29,7 @@ app.get('/notes/:id', (req, res) => {
 // DELETE Route for a specific tip
 app.delete('/notes/:id', (req, res) => {
     const id = req.params.id;
-    readFromFile('./db/tips.json')
+    readFromFile('./db/db.json')
         .then((data) => JSON.parse(data))
         .then((json) => {
             // Make a new array of all tips except the one with the ID provided in the URL
