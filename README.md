@@ -26,7 +26,7 @@
 #### on the left hand side where the users will have the options to either save or trash them out using the trash can icon.
 
 ## ⚖️ License
-#### Covered by MIT Lincense
+#### Covered by MIT License
 [MIT License](https://opensource.org/Licenses/MIT)
 
 ## Contribution
