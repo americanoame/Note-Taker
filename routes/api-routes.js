@@ -49,6 +49,7 @@ app.delete('/notes/:id', (req, res) => {
 app.post('/notes', (req, res) => {
     console.log(req.body);
 
+    // Destructuring assgnment for the item in req.body
     const { title, text } = req.body;
 
     if (req.body) {
