@@ -18,7 +18,7 @@
 
 
 #### Check the deployed aplication at Heroku: https://heroku-demo-2022-11-andre.herokuapp.com/ 
-#### Or by visiting:  
+#### Or by visiting: https://github.com/americanoame 
 
 ## Usage
 #### Start typing, once note title and note text are typed, the users will be able to see the 
