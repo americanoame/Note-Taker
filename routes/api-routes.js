@@ -7,10 +7,15 @@ const {
 } = require('../helper/fsUtils');
 
 app.get('/notes', (req, res) => {
-    readFromFile('./db/db.json').then((notes) => res.json(JSON.parse(notes)));
-});
-//localhost:3001/api/notes, GET method
 
+    console.log("GET /notes")
+
+    readFromFile('./db/db.json').then((notes) => res.json(JSON.parse(notes)));
+
+
+});
+
+//localhost:3001/api/notes, GET method
 
 app.get('/notes/:id', (req, res) => {
     const id = req.params.id;
@@ -28,6 +33,9 @@ app.get('/notes/:id', (req, res) => {
 
 // DELETE Route for a specific tip
 app.delete('/notes/:id', (req, res) => {
+
+    console.log("GET /notes")
+
     const id = req.params.id;
     readFromFile('./db/db.json')
         .then((data) => JSON.parse(data))
@@ -47,6 +55,9 @@ app.delete('/notes/:id', (req, res) => {
 
 // POST Route for a new UX/UI tip
 app.post('/notes', (req, res) => {
+
+    console.log("GET /notes")
+
     console.log(req.body);
 
     // Destructuring assgnment for the item in req.body
