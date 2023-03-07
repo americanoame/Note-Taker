@@ -17,7 +17,7 @@
 ### 🛠 Installation
 
 
-#### Check the deployed aplication at Heroku: https://heroku-demo-2022-11-andre.herokuapp.com/ 
+#### Check the deployed aplication at Heroku: https://note-taker-andre.herokuapp.com/ 
 #### Or by visiting: https://github.com/americanoame 
 
 ## Usage

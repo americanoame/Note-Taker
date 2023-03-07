@@ -28,6 +28,29 @@ app.get('/notes/:id', (req, res) => {
                 : res.json('No tip with that ID');
         });
 });
+
+
+
+// i will change for this async in the near future
+
+// app.get('/notes/:id', async (req, res) => {
+//     try {
+//       const id = req.params.id;
+//       const data = await readFromFile('./db/db.json');
+//       const json = JSON.parse(data);
+//       const result = json.filter((notes) => notes.id === id);
+//       return result.length > 0
+//         ? res.json(result)
+//         : res.json('No tip with that ID');
+//     } catch (error) {
+//       console.error(error);
+//       res.status(500).json('Internal server error');
+//     }
+//   });
+
+
+
+
 //localhost:3001/api/notes/:id, GET method
 // :id means a parameter so we can pass different IDs
 
@@ -50,6 +73,25 @@ app.delete('/notes/:id', (req, res) => {
             res.json(`Item ${id} has been deleted 🗑️`);
         });
 });
+
+// app.delete('/notes/:id', async (req, res) => {
+//     try {
+//       console.log("GET /notes");
+  
+//       const id = req.params.id;
+//       const data = await readFromFile('./db/db.json');
+//       const json = JSON.parse(data);
+//       const result = json.filter((notes) => notes.id !== id);
+//       await writeToFile('./db/db.json', result);
+//       res.json(`Item ${id} has been deleted 🗑️`);
+//     } catch (error) {
+//       console.error(error);
+//       res.status(500).json('Internal server error');
+//     }
+//   });
+  
+  
+
 // localhost:3001/api/notes/:id, DELETE method
 //:id means you are passing a id when you run this route
 
